@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        {%for record in records%}
+        <div>
+            Welcome {{request.user}}
+            marks_obtained={{record.marks_obtained}}
+            right_answer_count={{record.right_answer_count}}
+            wrong_answer_count={{record.wrong_answer_count}}
+            date={{record.date}}
+        </div>
+        {%endfor%}
+    </div>
+</body>
+</html>
